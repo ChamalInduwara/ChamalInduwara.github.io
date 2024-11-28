@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="pokeball.png" type="image/x-icon">
+	<title>Pokédex</title>
+</head>
+<body>
+	<div id="details-content">
+		<div id="pokemonImage">
+			<button id="back" onclick="location.href='index.html';"><i class="fas fa-chevron-left"></i></button>
+			<h1 id="pokemonName"></h1>
+			<div class="imageContainer">
+				<button id="left"><i class="fas fa-chevron-left"></i></button>
+				<img id="pokemonImg">
+				<button id="right"><i class="fas fa-chevron-right"></i></button>
+			</div>
+		</div>
+		<div class="pokemonInfo">
+			<div class="left-div">
+				<p class="title">About : </p>
+				<p class="pokemonID"><i class="fas fa-id-card icon" title="ID"></i><span id="pokemonID"></span></p>
+				<p class="pokemonHP"><i class="fas fa-heart icon" title="HP"></i><span id="pokemonHP"></span></p>
+				<p class="pokemonHeight"><i class="fas fa-ruler-vertical icon" title="Height"></i><span id="pokemonHeight"></span></p>
+				<p class="pokemonWeight"><i class="fas fa-weight-hanging icon" title="Weight"></i><span id="pokemonWeight"></span></p>
+			</div>
+			<div class="right-div">
+				<p class="title">Types : </p>
+				<ul id="pokemonType"></ul>
+				<p class="title">Moves : </p>
+				<ul id="pokemonMoves"></ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="script-details.js"></script>
+</body>
+</html>
